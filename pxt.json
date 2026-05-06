@@ -1,0 +1,11 @@
+{
+    "name": "slider-extension",
+    "version": "0.0.1",
+    "description": "A simple slider extension for MakeCode",
+    "dependencies": {},
+    "files": [
+        "main.ts"
+    ],
+    "testFiles": [],
+    "public": true
+}
