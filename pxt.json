@@ -1,7 +1,7 @@
 {
-    "name": "slider-extension",
-    "version": "0.0.1",
-    "description": "A simple slider extension for MakeCode",
+    "name": "rgb-sliders",
+    "version": "0.0.2",
+    "description": "Three sliders for R, G, and B values (0–255)",
     "dependencies": {},
     "files": [
         "main.ts"
@@ -9,3 +9,4 @@
     "testFiles": [],
     "public": true
 }
+
