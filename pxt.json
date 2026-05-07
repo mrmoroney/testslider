@@ -1,6 +1,6 @@
 {
     "name": "rgb-sliders",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Three sliders for R, G, and B values (0–255)",
     "dependencies": {},
     "files": [
