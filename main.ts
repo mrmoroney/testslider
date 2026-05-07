@@ -8,33 +8,19 @@ namespace rgbSliders {
     let bValue = 0
 
     /**
-     * Set Red slider value (0–255)
-     * @param value red value, eg: 128
+     * Set all RGB slider values (0–255 each)
+     * @param r red value, eg: 255
+     * @param g green value, eg: 128
+     * @param b blue value, eg: 64
      */
-    //% block="set Red slider to %value"
-    //% value.min=0 value.max=255
-    export function setRed(value: number): void {
-        rValue = Math.max(0, Math.min(255, value))
-    }
-
-    /**
-     * Set Green slider value (0–255)
-     * @param value green value, eg: 128
-     */
-    //% block="set Green slider to %value"
-    //% value.min=0 value.max=255
-    export function setGreen(value: number): void {
-        gValue = Math.max(0, Math.min(255, value))
-    }
-
-    /**
-     * Set Blue slider value (0–255)
-     * @param value blue value, eg: 128
-     */
-    //% block="set Blue slider to %value"
-    //% value.min=0 value.max=255
-    export function setBlue(value: number): void {
-        bValue = Math.max(0, Math.min(255, value))
+    //% block="set RGB sliders to R %r G %g B %b"
+    //% r.min=0 r.max=255
+    //% g.min=0 g.max=255
+    //% b.min=0 b.max=255
+    export function setRGB(r: number, g: number, b: number): void {
+        rValue = Math.max(0, Math.min(255, r))
+        gValue = Math.max(0, Math.min(255, g))
+        bValue = Math.max(0, Math.min(255, b))
     }
 
     /**
@@ -69,4 +55,3 @@ namespace rgbSliders {
         return (rValue << 16) | (gValue << 8) | bValue
     }
 }
-
